@@ -20,15 +20,5 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869
 sudo apt-get install curl -y
 sudo curl -s https://get.docker.io/ubuntu/ | sudo sh
 
-
-
-
-
-
-
-sudo docker build -t vfarcic/jenkins - < /vagrant/Dockerfile
-sudo docker login
-sudo docker push vfarcic/jenkins
-
-sudo docker run -d -P vfarcic/jenkins
-sudo docker ps
+# Run the Jenkins container
+sudo docker run -d -p 0.0.0.0:49153:8080 vfarcic/jenkins

@@ -5,7 +5,8 @@
 [Vagrant](http://www.vagrantup.com/) is used to create local virtual machine using Oracle [VirtualBox](https://www.virtualbox.org/).
 
 To create a virtual machine with CentOS and Bamboo execute following from this directory:
-```shell
+
+```bash
 vagrant up
 ```
 
@@ -18,7 +19,8 @@ Recommended installation for development purposes is to use the "Express install
 Please see the [Running the Setup Wizard](https://confluence.atlassian.com/display/BAMBOO/Running+the+Setup+Wizard) guide for detailed instructions.
 
 To stop the virtual machine execute:
-```shel
+
+```bash
 vagrant halt
 ```
 
@@ -27,7 +29,8 @@ Please consult [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www
 ## Production environment
 
 Execute bootstrap.sh:
-```shell
+
+```bash
 ./bootstrap.sh
 ```
 
